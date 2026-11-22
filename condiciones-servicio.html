@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Condiciones del Servicio — Safety Officer 3D: Hazard Runner | AXSAN SYSTEMS CORPORATION</title>
+  <meta name="description" content="Condiciones del Servicio oficiales de Safety Officer 3D: Hazard Runner desarrolladas por AXSAN SYSTEMS CORPORATION para Google Play Store." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #09090b;
+      --muted: #52525b;
+      --accent: #dc2626;
+      --accent-soft: #fef2f2;
+      --border: #e4e4e7;
+      --amber-soft: #fffbeb;
+      --amber-border: #fde68a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, #09090b 0%, #18181b 65%, #450a0a 100%);
+      color: #ffffff;
+      padding: 34px 20px 30px;
+      border-bottom: 4px solid var(--accent);
+    }
+    .wrap {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .nav-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+    .top-link {
+      color: #fca5a5;
+      text-decoration: none;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 8px;
+    }
+    .lang-btn {
+      background: rgba(255,255,255,0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 1.2;
+      font-weight: 900;
+    }
+    .subtitle {
+      margin: 0;
+      color: #d4d4d8;
+      font-size: 15px;
+      max-width: 740px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .meta-item {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 12.5px;
+    }
+    .meta-item strong {
+      display: block;
+      color: #fca5a5;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .meta-item a { color: #ffffff; }
+    main {
+      padding: 28px 16px 56px;
+    }
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(9,9,11,0.04);
+    }
+    .toc h2 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--accent);
+    }
+    .toc-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 6px 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13.5px;
+    }
+    .toc-list a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .toc-list a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 14px rgba(9,9,11,0.03);
+    }
+    section h2 {
+      margin: 0 0 12px;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--ink);
+      border-bottom: 2px solid var(--accent-soft);
+      padding-bottom: 8px;
+    }
+    p { margin: 0 0 12px; font-size: 14.5px; color: #27272a; }
+    ul, ol { margin: 0 0 12px; padding-left: 20px; font-size: 14.5px; color: #27272a; }
+    li { margin-bottom: 6px; }
+    .callout {
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    .callout.amber {
+      background: var(--amber-soft);
+      border: 1px solid var(--amber-border);
+      color: #78350f;
+    }
+    .callout.red {
+      background: var(--accent-soft);
+      border: 1px solid #fecaca;
+      color: #7f1d1d;
+    }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center;
+      padding: 24px 16px 36px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+    }
+    .hidden { display: none !important; }
+    @media (max-width: 600px) {
+      section { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand-pill">📜 AXSAN SYSTEMS CORPORATION · 2026</div>
+        <div class="nav-actions">
+          <a id="hdr-priv-link" class="top-link" href="./privacidad.html">🔒 Privacidad</a>
+          <a id="hdr-del-link" class="top-link" href="./eliminar-cuenta.html">🗑️ Eliminar Cuenta</a>
+          <button type="button" id="btn-es" class="lang-btn active" onclick="setLang('es')">Español</button>
+          <button type="button" id="btn-en" class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </div>
+      <h1 id="hdr-title">Condiciones del Servicio — Safety Officer 3D: Hazard Runner</h1>
+      <p id="hdr-sub" class="subtitle">
+        Términos legales de uso, licencias, suscripciones en Google Play, publicidad, normas de conducta y exención de responsabilidad educativa para usuarios de todo el mundo.
+      </p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong id="m-dev-lbl">Titular / Desarrollador</strong>
+          AXSAN SYSTEMS CORPORATION
+        </div>
+        <div class="meta-item">
+          <strong id="m-app-lbl">Aplicación</strong>
+          Safety Officer 3D: Hazard Runner<br /><small>ID: com.axsan.supervisorhseaxsan</small>
+        </div>
+        <div class="meta-item">
+          <strong id="m-mail-lbl">Contacto Legal y Soporte</strong>
+          <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>
+        </div>
+        <div class="meta-item">
+          <strong id="m-web-lbl">Sitio Web Oficial</strong>
+          <a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- =================================================================== -->
+    <!-- VERSIÓN EN ESPAÑOL                                                  -->
+    <!-- =================================================================== -->
+    <div id="content-es">
+      <p style="font-size:13px; color:#52525b; margin-bottom:16px;">
+        <strong>Fecha de entrada en vigor y última actualización:</strong> 22 de noviembre de 2026.
+      </p>
+
+      <nav class="toc" aria-label="Índice de contenido">
+        <h2>Índice de Condiciones</h2>
+        <ul class="toc-list">
+          <li><a href="#es-1">1. Aceptación de las Condiciones</a></li>
+          <li><a href="#es-2">2. Licencia Limitada y Propiedad Intelectual</a></li>
+          <li><a href="#es-3">3. Propósito Educativo y Exención SST/SSOMA</a></li>
+          <li><a href="#es-4">4. Cuentas, Empresas y Multijugador</a></li>
+          <li><a href="#es-5">5. Suscripciones, Pruebas Gratis y Compras</a></li>
+          <li><a href="#es-6">6. Versión Gratuita con Anuncios (AdMob)</a></li>
+          <li><a href="#es-7">7. Economía Virtual del Juego</a></li>
+          <li><a href="#es-8">8. Conducta Prohibida y Suspensión</a></li>
+          <li><a href="#es-9">9. Disponibilidad y Limitación de Responsabilidad</a></li>
+          <li><a href="#es-10">10. Privacidad, Eliminación de Cuenta y Ley Aplicable</a></li>
+        </ul>
+      </nav>
+
+      <section id="es-1">
+        <h2>1. Aceptación de las Condiciones y Elegibilidad</h2>
+        <p>
+          Las presentes Condiciones del Servicio constituyen un acuerdo legal vinculante entre usted (el «Usuario») y <strong>AXSAN SYSTEMS CORPORATION</strong> (<a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a>, correo: <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>), respecto al uso de la aplicación móvil <strong>Safety Officer 3D: Hazard Runner</strong> (<code>com.axsan.supervisorhseaxsan</code>).
+        </p>
+        <p>
+          Al descargar, instalar, acceder o utilizar la aplicación, usted declara que es mayor de edad en su jurisdicción (o que cuenta con autorización de su padre, madre o tutor legal si tiene al menos 13 años o la edad mínima local aplicable) y acepta cumplir íntegramente estas Condiciones y nuestra <a href="./privacidad.html">Política de Privacidad</a>.
+        </p>
+      </section>
+
+      <section id="es-2">
+        <h2>2. Licencia de Uso Limitada y Propiedad Intelectual</h2>
+        <p>
+          AXSAN SYSTEMS CORPORATION le otorga una licencia personal, limitada, no exclusiva, revocable e intransferible para instalar y ejecutar la aplicación en dispositivos Android compatibles exclusivamente para fines personales, recreativos o de sensibilización interna en Seguridad, Salud Ocupacional y Medio Ambiente (SSOMA / SST).
+        </p>
+        <ul>
+          <li>Todos los derechos sobre el código fuente, interfaz, gráficos 3D, personajes, banco de preguntas, mini-juegos, nombres comerciales y diseños pertenecen a <strong>AXSAN SYSTEMS CORPORATION</strong> (con excepción de activos con licencias de terceros debidamente atribuidas dentro de Ajustes, como pistas musicales de Pixabay o motores open-source).</li>
+          <li>Queda estrictamente prohibido copiar, descompilar, realizar ingeniería inversa, redistribuir comercialmente, revender o extraer los activos o bases de preguntas del juego sin autorización escrita previa.</li>
+        </ul>
+      </section>
+
+      <section id="es-3">
+        <h2>3. Propósito Educativo y Exención de Responsabilidad Profesional SSOMA / SST</h2>
+        <div class="callout amber">
+          <strong>Aviso Importante sobre Seguridad Laboral:</strong><br />
+          <strong>Safety Officer 3D: Hazard Runner</strong> es un videojuego educativo y plataforma de sensibilización gamificada. <strong>NO reemplaza</strong> la capacitación presencial obligatoria, evaluaciones médicas, permisos escritos reales de trabajo de alto riesgo (PETAR, IPERC, ATS, LOTO) ni la supervisión directa de un profesional SSOMA/HSE calificado en campo.
+        </div>
+        <ul>
+          <li>Las referencias a normas técnicas y legales (como Ley N.° 29783, D.S. 005-2012-TR, D.S. 024-2016-EM, NTE G.050, NTP, OSHA, NFPA o ANSI) tienen carácter didáctico y referencial; el usuario y su empleador deben verificar siempre la normativa vigente aplicable en su jurisdicción y lugar de trabajo.</li>
+          <li>Los <strong>Diplomas o Certificados PDF</strong> generados dentro de la aplicación acreditan exclusivamente el progreso alcanzado dentro del simulador/videojuego y <strong>no constituyen</strong> títulos académicos oficiales, certificaciones técnicas habilitantes ni licencias profesionales.</li>
+        </ul>
+      </section>
+
+      <section id="es-4">
+        <h2>4. Cuentas de Usuario, Empresas, Grupos y Salas Multijugador</h2>
+        <ul>
+          <li>Para acceder a rankings mundiales, empresas, áreas, grupos y salas multijugador debe autenticarse con una cuenta válida (correo/contraseña o Google Sign-In). Usted es responsable de mantener la confidencialidad de su cuenta.</li>
+          <li>Al crear o unirse a una Empresa o Área dentro del juego, el creador de la empresa administra la creación de áreas y solicitudes internas dentro de la app, sin que ello implique relación laboral ni respaldo oficial de AXSAN SYSTEMS CORPORATION hacia dichas empresas registradas por usuarios.</li>
+          <li>No está permitido registrar nombres ofensivos, difamatorios, engañosos o que suplanten la identidad de terceros.</li>
+        </ul>
+      </section>
+
+      <section id="es-5">
+        <h2>5. Suscripciones Sin Anuncios, Pruebas Gratuitas y Compras en Google Play</h2>
+        <p>
+          La aplicación es de descarga gratuita y ofrece de manera opcional suscripciones recurrentes (<strong>Plan Mensual</strong> y <strong>Plan Anual</strong>) para eliminar anuncios intersticiales y habilitar beneficios VIP dentro del juego, así como futuras compras integradas de personajes o ítems en la Tienda SSOMA:
+        </p>
+        <ul>
+          <li><strong>Procesamiento de pagos:</strong> todas las transacciones, facturación, impuestos locales y renovaciones son procesadas exclusivamente por <strong>Google Play Store</strong> (Google Play Billing).</li>
+          <li><strong>Prueba gratuita de 7 días:</strong> los nuevos suscriptores elegibles según las reglas de Google Play pueden disfrutar de un periodo de prueba gratuita de 7 días. Si no cancela antes de que finalice la prueba, la suscripción se renovará automáticamente al precio mostrado en Google Play al momento de confirmar la compra.</li>
+          <li><strong>Cancelación:</strong> usted puede cancelar su suscripción en cualquier momento desde Google Play Store (o desde el botón <em>Gestionar en Google Play</em> dentro de la app) antes de la fecha de renovación para evitar cargos futuros. La cancelación surte efecto al término del periodo ya pagado.</li>
+          <li><strong>Reembolsos:</strong> cualquier solicitud de reembolso se rige por las políticas vigentes de reembolso de <strong>Google Play Store</strong>.</li>
+        </ul>
+      </section>
+
+      <section id="es-6">
+        <h2>6. Versión Gratuita con Publicidad (Google AdMob)</h2>
+        <p>
+          Si utiliza la versión gratuita sin suscripción activa, acepta que la aplicación muestre anuncios gestionados por <strong>Google AdMob</strong> (anuncios Intersticiales en transiciones naturales y anuncios Recompensados voluntarios). AXSAN SYSTEMS CORPORATION no es responsable del contenido ni de las ofertas de sitios web de terceros anunciados, los cuales están sujetos a los términos y políticas de dichos anunciantes.
+        </p>
+      </section>
+
+      <section id="es-7">
+        <h2>7. Economía Virtual del Juego ("Presupuesto SSOMA")</h2>
+        <p>
+          Los montos expresados con el símbolo «$» o «USD» dentro del menú y la Tienda SSOMA bajo el concepto <strong>Presupuesto SSOMA</strong> representan exclusivamente <strong>moneda virtual ficticia</strong> del juego obtenida mediante partidas, rachas o anuncios recompensados. Dicho presupuesto virtual <strong>no tiene valor monetario real</strong>, no constituye dinero electrónico, no es reembolsable ni puede transferirse o canjearse por dinero en efectivo fuera de la aplicación.
+        </p>
+      </section>
+
+      <section id="es-8">
+        <h2>8. Conducta Prohibida y Terminación</h2>
+        <p>Queda prohibido:</p>
+        <ul>
+          <li>Utilizar bots, scripts automatizados, emuladores modificados o herramientas de alteración de memoria para manipular puntajes en <code>world_ranking</code>, salas multijugador o saldo virtual.</li>
+          <li>Intentar eludir las reglas de seguridad de Cloud Firestore, realizar pruebas de carga no autorizadas o saturar las salas multijugador.</li>
+          <li>Interactuar de forma fraudulenta con los anuncios de AdMob (clics artificiales o automatizados).</li>
+        </ul>
+        <p>
+          El incumplimiento de estas reglas faculta a AXSAN SYSTEMS CORPORATION a suspender o cancelar el acceso a la cuenta infractora sin previo aviso ni compensación.
+        </p>
+      </section>
+
+      <section id="es-9">
+        <h2>9. Disponibilidad del Servicio y Limitación de Responsabilidad</h2>
+        <p>
+          La aplicación se proporciona «TAL CUAL» y «SEGÚN DISPONIBILIDAD». Aunque trabajamos continuamente para mantener la estabilidad de los servidores Firebase y funciones 3D, no garantizamos un servicio ininterrumpido o libre de errores en todos los dispositivos. En la máxima medida permitida por la ley aplicable, AXSAN SYSTEMS CORPORATION no será responsable por daños indirectos, incidentales, pérdida de datos locales o lucro cesante derivados del uso o imposibilidad de uso de la aplicación.
+        </p>
+      </section>
+
+      <section id="es-10">
+        <h2>10. Privacidad, Eliminación de Cuenta, Modificaciones y Ley Aplicable</h2>
+        <ul>
+          <li>El tratamiento de datos personales se rige por nuestra <a href="./privacidad.html">Política de Privacidad</a>. Puede solicitar la eliminación de su cuenta en cualquier momento en nuestro <a href="./eliminar-cuenta.html">Formulario de Eliminación de Cuenta</a>.</li>
+          <li>AXSAN SYSTEMS CORPORATION podrá actualizar estas Condiciones cuando incorpore nuevas funciones o por exigencias legales, publicando la versión vigente en esta misma URL.</li>
+          <li>Estas Condiciones se interpretan conforme a las leyes de la República del Perú, sin perjuicio de los derechos irrenunciables que asistan al consumidor en su país de residencia.</li>
+          <li><strong>Contacto legal:</strong> <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a> · <a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a>.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- ENGLISH VERSION                                                     -->
+    <!-- =================================================================== -->
+    <div id="content-en" class="hidden">
+      <p style="font-size:13px; color:#52525b; margin-bottom:16px;">
+        <strong>Effective Date & Last Updated:</strong> November 22, 2026.
+      </p>
+
+      <nav class="toc" aria-label="Table of Contents">
+        <h2>Table of Contents</h2>
+        <ul class="toc-list">
+          <li><a href="#en-1">1. Acceptance of Terms</a></li>
+          <li><a href="#en-2">2. Limited License & Intellectual Property</a></li>
+          <li><a href="#en-3">3. Educational Purpose & HSE Disclaimer</a></li>
+          <li><a href="#en-4">4. User Accounts, Companies & Multiplayer</a></li>
+          <li><a href="#en-5">5. Subscriptions, Free Trials & Billing</a></li>
+          <li><a href="#en-6">6. Ad-Supported Free Version (AdMob)</a></li>
+          <li><a href="#en-7">7. Virtual In-Game Economy</a></li>
+          <li><a href="#en-8">8. Prohibited Conduct & Termination</a></li>
+          <li><a href="#en-9">9. Availability & Limitation of Liability</a></li>
+          <li><a href="#en-10">10. Privacy, Account Deletion & Governing Law</a></li>
+        </ul>
+      </nav>
+
+      <section id="en-1">
+        <h2>1. Acceptance of Terms & Eligibility</h2>
+        <p>
+          These Terms of Service form a binding legal agreement between you and <strong>AXSAN SYSTEMS CORPORATION</strong> (<a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a>, email: <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>) governing your use of the Android application <strong>Safety Officer 3D: Hazard Runner</strong> (<code>com.axsan.supervisorhseaxsan</code>).
+        </p>
+        <p>
+          By downloading or using the app, you confirm that you meet the minimum legal age in your jurisdiction (and are at least 13 years old, or 16 where required) and agree to these Terms and our <a href="./privacidad.html">Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section id="en-2">
+        <h2>2. Limited License & Intellectual Property</h2>
+        <p>
+          AXSAN SYSTEMS CORPORATION grants you a personal, limited, non-exclusive, revocable, non-transferable license to use the app on compatible Android devices for personal, recreational, or internal occupational safety awareness purposes. All source code, 3D assets, quizzes, mini-games, and trademarks belong to AXSAN SYSTEMS CORPORATION (except licensed third-party assets attributed in Settings). Reverse engineering, commercial redistribution, or unauthorized extraction is prohibited.
+        </p>
+      </section>
+
+      <section id="en-3">
+        <h2>3. Educational Purpose & Occupational Safety Disclaimer</h2>
+        <div class="callout amber">
+          <strong>Important Safety Notice:</strong><br />
+          <strong>Safety Officer 3D: Hazard Runner</strong> is an educational game and safety-awareness simulator. It does <strong>NOT replace</strong> mandatory workplace training, official risk assessments (JSA/IPERC/PETAR/LOTO), medical fitness clearances, or supervision by a qualified HSE/Safety Officer on site. In-app PDF certificates reflect game progression only and are not official regulatory or academic credentials.
+        </div>
+      </section>
+
+      <section id="en-4">
+        <h2>4. User Accounts, Companies & Multiplayer</h2>
+        <p>
+          You are responsible for safeguarding your login credentials. Company/area names created by users inside the app do not imply endorsement or employment relationship with AXSAN SYSTEMS CORPORATION. Offensive, misleading, or impersonating display names are prohibited.
+        </p>
+      </section>
+
+      <section id="en-5">
+        <h2>5. Subscriptions, 7-Day Free Trials & Google Play Billing</h2>
+        <p>
+          Optional Monthly and Annual Ad-Free subscriptions (including a 7-day free trial for eligible new subscribers) and future VIP store items are billed and managed solely by <strong>Google Play Store</strong>. Unless canceled in Google Play before the trial or current period ends, subscriptions automatically renew at the displayed Play Store price. Refunds are governed by Google Play Store policies.
+        </p>
+      </section>
+
+      <section id="en-6">
+        <h2>6. Ad-Supported Free Version (Google AdMob)</h2>
+        <p>
+          Free-tier users without an active Ad-Free subscription may view Interstitial and opt-in Rewarded ads delivered via Google AdMob. We are not responsible for third-party advertised products or external websites.
+        </p>
+      </section>
+
+      <section id="en-7">
+        <h2>7. Virtual In-Game Economy</h2>
+        <p>
+          Virtual currency shown as "SSOMA Budget" or "$" inside gameplay menus has <strong>no real-world monetary value</strong>, is non-refundable, and cannot be redeemed or exchanged for cash outside the app.
+        </p>
+      </section>
+
+      <section id="en-8">
+        <h2>8. Prohibited Conduct & Termination</h2>
+        <p>
+          Cheating, score tampering, bots, unauthorized Firestore access attempts, or invalid ad-click manipulation are strictly forbidden and may result in immediate account suspension or termination without compensation.
+        </p>
+      </section>
+
+      <section id="en-9">
+        <h2>9. Service Availability & Limitation of Liability</h2>
+        <p>
+          The app is provided "AS IS" and "AS AVAILABLE". To the fullest extent permitted by applicable law, AXSAN SYSTEMS CORPORATION disclaims implied warranties and shall not be liable for indirect, incidental, or consequential damages arising from app usage or downtime.
+        </p>
+      </section>
+
+      <section id="en-10">
+        <h2>10. Privacy, Account Deletion & Governing Law</h2>
+        <p>
+          Data practices are detailed in our <a href="./privacidad.html">Privacy Policy</a>, and account deletion requests may be submitted via our <a href="./eliminar-cuenta.html">Account Deletion Form</a>. These Terms are governed by the laws of the Republic of Peru, without prejudice to mandatory consumer protection laws in your country of residence. Legal contact: <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 <strong>AXSAN SYSTEMS CORPORATION</strong> · Safety Officer 3D: Hazard Runner ·
+    <a href="./privacidad.html">Política de Privacidad</a> ·
+    <a href="./eliminar-cuenta.html">Eliminar Cuenta</a> ·
+    <a href="https://axsancorp.com" target="_blank" rel="noopener">axsancorp.com</a>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      const isEn = lang === "en";
+      document.documentElement.lang = isEn ? "en" : "es";
+      document.getElementById("content-es").classList.toggle("hidden", isEn);
+      document.getElementById("content-en").classList.toggle("hidden", !isEn);
+      document.getElementById("btn-es").classList.toggle("active", !isEn);
+      document.getElementById("btn-en").classList.toggle("active", isEn);
+      document.getElementById("hdr-priv-link").textContent = isEn ? "🔒 Privacy" : "🔒 Privacidad";
+      document.getElementById("hdr-del-link").textContent = isEn ? "🗑️ Delete Account" : "🗑️ Eliminar Cuenta";
+      document.getElementById("hdr-title").textContent = isEn
+        ? "Terms of Service — Safety Officer 3D: Hazard Runner"
+        : "Condiciones del Servicio — Safety Officer 3D: Hazard Runner";
+      document.getElementById("hdr-sub").textContent = isEn
+        ? "Legal terms of use, licensing, Google Play subscriptions, advertising, conduct rules, and educational safety disclaimer for users worldwide."
+        : "Términos legales de uso, licencias, suscripciones en Google Play, publicidad, normas de conducta y exención de responsabilidad educativa para usuarios de todo el mundo.";
+      document.getElementById("m-dev-lbl").textContent = isEn ? "Owner / Developer" : "Titular / Desarrollador";
+      document.getElementById("m-app-lbl").textContent = isEn ? "Application" : "Aplicación";
+      document.getElementById("m-mail-lbl").textContent = isEn ? "Legal & Support Email" : "Contacto Legal y Soporte";
+      document.getElementById("m-web-lbl").textContent = isEn ? "Official Website" : "Sitio Web Oficial";
+    }
+  </script>
+</body>
+</html>
