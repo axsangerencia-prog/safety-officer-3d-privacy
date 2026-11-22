@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminación de Cuenta y Datos — Safety Officer 3D: Hazard Runner | AXSAN SYSTEMS CORPORATION</title>
+  <meta name="description" content="Formulario oficial para solicitar la eliminación de cuenta y datos personales de Safety Officer 3D: Hazard Runner (AXSAN SYSTEMS CORPORATION)." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #09090b;
+      --muted: #52525b;
+      --accent: #dc2626;
+      --accent-soft: #fef2f2;
+      --border: #e4e4e7;
+      --emerald: #047857;
+      --emerald-soft: #ecfdf5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #09090b 0%, #18181b 65%, #450a0a 100%);
+      color: #ffffff;
+      padding: 32px 20px 28px;
+      border-bottom: 4px solid var(--accent);
+    }
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .nav-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+    .top-link {
+      color: #fca5a5;
+      text-decoration: none;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 8px;
+    }
+    .lang-btn {
+      background: rgba(255,255,255,0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(22px, 4vw, 31px);
+      line-height: 1.2;
+      font-weight: 900;
+    }
+    .subtitle {
+      margin: 0;
+      color: #d4d4d8;
+      font-size: 14.5px;
+    }
+    main {
+      padding: 26px 16px 52px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 16px rgba(9,9,11,0.04);
+    }
+    .card.accent-top {
+      border-top: 4px solid var(--accent);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+    p, li {
+      font-size: 14px;
+      color: #27272a;
+    }
+    ul, ol {
+      margin: 0 0 12px;
+      padding-left: 20px;
+    }
+    li { margin-bottom: 6px; }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .field.full {
+      grid-column: 1 / -1;
+    }
+    label {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 11px 12px;
+      border: 1.5px solid #d4d4d8;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 14px;
+      color: var(--ink);
+      background: #ffffff;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.14);
+    }
+    .check-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--accent-soft);
+      border: 1px solid #fecaca;
+      border-radius: 10px;
+      padding: 12px;
+      margin: 6px 0 16px;
+    }
+    .check-row input {
+      margin-top: 3px;
+      width: 17px;
+      height: 17px;
+      accent-color: var(--accent);
+      flex-shrink: 0;
+    }
+    .check-row label {
+      font-weight: 600;
+      font-size: 13px;
+      color: #7f1d1d;
+      cursor: pointer;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      border-radius: 11px;
+      padding: 12px 18px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.1s ease, filter 0.15s ease;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-primary {
+      width: 100%;
+      background: linear-gradient(135deg, #dc2626, #b91c1c);
+      color: #ffffff;
+      box-shadow: 0 6px 18px rgba(220, 38, 38, 0.25);
+    }
+    .btn-secondary {
+      background: #09090b;
+      color: #ffffff;
+      border: 1.5px solid #09090b;
+      font-size: 13px;
+      padding: 10px 14px;
+    }
+    .btn-outline {
+      background: #ffffff;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      font-size: 13px;
+      padding: 10px 14px;
+    }
+    .result-box {
+      margin-top: 18px;
+      background: var(--emerald-soft);
+      border: 1.5px solid #10b981;
+      border-radius: 14px;
+      padding: 16px;
+      color: #064e3b;
+    }
+    .result-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .ticket-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #ffffff;
+      border: 1px solid #a7f3d0;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 800;
+      color: #047857;
+    }
+    .summary-box {
+      background: #ffffff;
+      border: 1px solid #d4d4d8;
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      white-space: pre-wrap;
+      color: #18181b;
+    }
+    .hidden { display: none !important; }
+    footer {
+      text-align: center;
+      padding: 22px 16px 34px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+    }
+    footer a { color: var(--accent); font-weight: 600; }
+    @media (max-width: 640px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .card { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand-pill">🛡️ AXSAN SYSTEMS CORPORATION · 2026</div>
+        <div class="nav-actions">
+          <a id="hdr-priv-link" class="top-link" href="./privacidad.html">← Política de Privacidad</a>
+          <button type="button" id="btn-es" class="lang-btn active" onclick="setLang('es')">Español</button>
+          <button type="button" id="btn-en" class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </div>
+      <h1 id="hdr-title">Solicitud de Eliminación de Cuenta y Datos</h1>
+      <p id="hdr-sub" class="subtitle">
+        Formulario oficial para usuarios de <strong>Safety Officer 3D: Hazard Runner</strong> (<code>com.axsan.supervisorhseaxsan</code>) · Desarrollado por AXSAN SYSTEMS CORPORATION.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="card accent-top">
+      <h2 id="form-title">1. Enviar Solicitud de Eliminación</h2>
+      <p id="form-desc">
+        Completa los datos de la cuenta registrada en el juego. Al enviar el formulario se generará tu código de seguimiento y se preparará el envío directo a nuestro equipo de privacidad (<strong>gerencia@axsancorp.com</strong>).
+      </p>
+
+      <form id="delete-account-form">
+        <div class="form-grid">
+          <div class="field">
+            <label id="lbl-email" for="inp-email">Correo electrónico registrado en el juego *</label>
+            <input id="inp-email" type="email" required placeholder="ejemplo@empresa.com" autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label id="lbl-name" for="inp-name">Nombre visible / Alias de Supervisor *</label>
+            <input id="inp-name" type="text" required maxlength="60" placeholder="Ej. Ing. Juan Pérez" />
+          </div>
+
+          <div class="field">
+            <label id="lbl-provider" for="inp-provider">Método de inicio de sesión *</label>
+            <select id="inp-provider" required>
+              <option value="Correo y contraseña">Correo y contraseña (Firebase Email)</option>
+              <option value="Google Sign-In">Continuar con Google (Google Sign-In)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label id="lbl-scope" for="inp-scope">Alcance de la solicitud *</label>
+            <select id="inp-scope" required>
+              <option value="Eliminación total de cuenta y todos los datos">Eliminación total de cuenta y datos personales</option>
+              <option value="Eliminar solo progreso, ranking y membresías (mantener acceso)">Eliminar solo datos de progreso/empresa sin borrar la cuenta</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label id="lbl-reason" for="inp-reason">Comentarios adicionales o empresa vinculada (opcional)</label>
+            <textarea id="inp-reason" rows="3" maxlength="400" placeholder="Puedes indicar tu empresa/área o motivo opcional..."></textarea>
+          </div>
+        </div>
+
+        <div class="check-row">
+          <input id="inp-confirm" type="checkbox" required />
+          <label id="lbl-confirm" for="inp-confirm">
+            Confirmo que soy titular de la cuenta indicada y entiendo que la eliminación total de cuenta borra de forma irreversible mi perfil, puntajes, rachas, medallas y membresías asociadas.
+          </label>
+        </div>
+
+        <button id="submit-btn" type="submit" class="btn btn-primary">
+          🗑️ Generar y Enviar Solicitud de Eliminación
+        </button>
+      </form>
+
+      <div id="result-box" class="result-box hidden" aria-live="polite">
+        <div style="font-weight:900; font-size:15px; margin-bottom:6px;" id="res-heading">
+          ✅ Solicitud preparada correctamente · Ticket: <span id="res-ticket" class="ticket-code"></span>
+        </div>
+        <p id="res-info" style="margin:0 0 8px; color:#064e3b;">
+          Si tu aplicación de correo no se abrió automáticamente, usa uno de los botones de abajo para enviar la solicitud a <strong>gerencia@axsancorp.com</strong> desde el mismo correo que deseas eliminar:
+        </p>
+        <div class="result-actions">
+          <a id="btn-mailto" href="#" class="btn btn-secondary">✉️ Abrir App de Correo</a>
+          <a id="btn-gmail" href="#" target="_blank" rel="noopener" class="btn btn-outline">🌐 Enviar por Gmail Web</a>
+          <button id="btn-copy" type="button" class="btn btn-outline">📋 Copiar Texto</button>
+        </div>
+        <div id="res-preview" class="summary-box"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 id="scope-title">2. Qué datos se eliminan y qué datos pueden conservarse</h2>
+      <div id="scope-body-es">
+        <p><strong>Datos que se eliminan de forma permanente (plazo máximo: 15 días hábiles, purga total en 30 días):</strong></p>
+        <ul>
+          <li>Cuenta de acceso en <strong>Firebase Authentication</strong> (correo electrónico, UID y vínculo con Google Sign-In).</li>
+          <li>Perfil privado en Cloud Firestore (<code>users_private/{uid}</code>: nombre visible, correo, rachas y membresías).</li>
+          <li>Registros en <strong>Ranking Mundial</strong> (<code>world_ranking</code>) y membresías en empresas, áreas operativas o grupos de amigos.</li>
+          <li><em>Nota:</em> Puedes eliminar los datos guardados localmente en tu dispositivo en cualquier momento desinstalando la aplicación o borrando su almacenamiento en Ajustes de Android.</li>
+        </ul>
+        <p><strong>Datos que pueden conservarse temporalmente o por obligación legal:</strong></p>
+        <ul>
+          <li>Registros de transacciones y facturación gestionados por <strong>Google Play Store</strong> (suscripciones o compras pasadas), que se conservan según exigencias fiscales y contables legales y bajo las políticas de Google Play.</li>
+          <li>Métricas técnicas agregadas y anónimas en Firebase Analytics que no permiten identificarte personalmente.</li>
+          <li>Si cuentas con una suscripción activa en Google Play, recuerda cancelarla desde <em>Play Store → Pagos y suscripciones</em> para evitar futuras renovaciones antes de eliminar tu cuenta.</li>
+        </ul>
+      </div>
+
+      <div id="scope-body-en" class="hidden">
+        <p><strong>Data permanently deleted (processed within 15 business days, full purge within 30 days):</strong></p>
+        <ul>
+          <li>Your <strong>Firebase Authentication</strong> account (email, UID, and Google Sign-In link).</li>
+          <li>Your private profile in Cloud Firestore (<code>users_private/{uid}</code>: display name, email, streaks, and memberships).</li>
+          <li>Entries in the <strong>World Ranking</strong> (<code>world_ranking</code>) and company/area/group rosters.</li>
+          <li><em>Note:</em> Local device storage can also be cleared anytime by uninstalling the app or clearing app storage in Android Settings.</li>
+        </ul>
+        <p><strong>Data that may be retained for legal or operational compliance:</strong></p>
+        <ul>
+          <li>Transaction and billing records handled by <strong>Google Play Store</strong> (subscriptions or past purchases), retained as required by tax/accounting law and Google Play policies.</li>
+          <li>Aggregated, non-identifiable technical analytics in Firebase Analytics.</li>
+          <li>If you have an active Google Play subscription, remember to cancel it in <em>Google Play Store → Payments & subscriptions</em> before deleting your account.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 <strong>AXSAN SYSTEMS CORPORATION</strong> · Safety Officer 3D: Hazard Runner ·
+    <a href="./privacidad.html">Política de Privacidad</a> ·
+    <a href="https://axsancorp.com" target="_blank" rel="noopener">axsancorp.com</a> ·
+    <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>
+  </footer>
+
+  <script>
+    let currentLang = "es";
+
+    function setLang(lang) {
+      currentLang = lang === "en" ? "en" : "es";
+      const isEn = currentLang === "en";
+      document.documentElement.lang = currentLang;
+      document.getElementById("btn-es").classList.toggle("active", !isEn);
+      document.getElementById("btn-en").classList.toggle("active", isEn);
+      document.getElementById("scope-body-es").classList.toggle("hidden", isEn);
+      document.getElementById("scope-body-en").classList.toggle("hidden", !isEn);
+
+      document.getElementById("hdr-priv-link").textContent = isEn ? "← Privacy Policy" : "← Política de Privacidad";
+      document.getElementById("hdr-title").textContent = isEn
+        ? "Account & Data Deletion Request"
+        : "Solicitud de Eliminación de Cuenta y Datos";
+      document.getElementById("hdr-sub").innerHTML = isEn
+        ? "Official request portal for <strong>Safety Officer 3D: Hazard Runner</strong> (<code>com.axsan.supervisorhseaxsan</code>) · AXSAN SYSTEMS CORPORATION."
+        : "Formulario oficial para usuarios de <strong>Safety Officer 3D: Hazard Runner</strong> (<code>com.axsan.supervisorhseaxsan</code>) · Desarrollado por AXSAN SYSTEMS CORPORATION.";
+
+      document.getElementById("form-title").textContent = isEn ? "1. Submit Deletion Request" : "1. Enviar Solicitud de Eliminación";
+      document.getElementById("form-desc").innerHTML = isEn
+        ? "Fill in the account details registered in the game. Submitting generates a tracking ticket and prepares your request to our privacy team (<strong>gerencia@axsancorp.com</strong>)."
+        : "Completa los datos de la cuenta registrada en el juego. Al enviar el formulario se generará tu código de seguimiento y se preparará el envío directo a nuestro equipo de privacidad (<strong>gerencia@axsancorp.com</strong>).";
+
+      document.getElementById("lbl-email").textContent = isEn ? "Registered Email Address *" : "Correo electrónico registrado en el juego *";
+      document.getElementById("lbl-name").textContent = isEn ? "Display Name / Supervisor Call Sign *" : "Nombre visible / Alias de Supervisor *";
+      document.getElementById("lbl-provider").textContent = isEn ? "Sign-In Method *" : "Método de inicio de sesión *";
+      document.getElementById("lbl-scope").textContent = isEn ? "Request Scope *" : "Alcance de la solicitud *";
+      document.getElementById("lbl-reason").textContent = isEn ? "Additional Notes or Linked Company (optional)" : "Comentarios adicionales o empresa vinculada (opcional)";
+      document.getElementById("lbl-confirm").textContent = isEn
+        ? "I confirm that I own the indicated account and understand that full account deletion permanently removes my profile, scores, streaks, medals, and memberships."
+        : "Confirmo que soy titular de la cuenta indicada y entiendo que la eliminación total de cuenta borra de forma irreversible mi perfil, puntajes, rachas, medallas y membresías asociadas.";
+      document.getElementById("submit-btn").textContent = isEn
+        ? "🗑️ Generate & Send Deletion Request"
+        : "🗑️ Generar y Enviar Solicitud de Eliminación";
+      document.getElementById("scope-title").textContent = isEn
+        ? "2. What Data Is Deleted & Retention Disclosures"
+        : "2. Qué datos se eliminan y qué datos pueden conservarse";
+    }
+
+    document.getElementById("delete-account-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("inp-email").value.trim();
+      const name = document.getElementById("inp-name").value.trim();
+      const provider = document.getElementById("inp-provider").value;
+      const scope = document.getElementById("inp-scope").value;
+      const reason = document.getElementById("inp-reason").value.trim() || "N/A";
+      const ticket = "DEL-2026-" + Math.random().toString(36).substring(2, 8).toUpperCase();
+      const timestamp = new Date().toISOString();
+
+      const subject = `Eliminación de Cuenta - Safety Officer 3D [${ticket}]`;
+      const body = [
+        "SOLICITUD DE ELIMINACIÓN DE CUENTA Y DATOS",
+        "Aplicación: Safety Officer 3D: Hazard Runner (com.axsan.supervisorhseaxsan)",
+        "Desarrollador: AXSAN SYSTEMS CORPORATION",
+        `Ticket de seguimiento: ${ticket}`,
+        `Fecha (UTC): ${timestamp}`,
+        "----------------------------------------",
+        `Correo registrado: ${email}`,
+        `Nombre visible / Alias: ${name}`,
+        `Método de acceso: ${provider}`,
+        `Alcance solicitado: ${scope}`,
+        `Comentarios / Empresa: ${reason}`,
+        "----------------------------------------",
+        "Confirmo que soy titular de esta cuenta y solicito procesar la eliminación conforme a la Política de Privacidad."
+      ].join("\n");
+
+      const mailtoHref = `mailto:gerencia@axsancorp.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const gmailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=gerencia@axsancorp.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      document.getElementById("res-ticket").textContent = ticket;
+      document.getElementById("btn-mailto").href = mailtoHref;
+      document.getElementById("btn-gmail").href = gmailHref;
+      document.getElementById("res-preview").textContent = body;
+      document.getElementById("result-box").classList.remove("hidden");
+
+      document.getElementById("btn-copy").onclick = function () {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(body).then(() => {
+            this.textContent = currentLang === "en" ? "✓ Copied!" : "✓ ¡Copiado!";
+          });
+        }
+      };
+
+      try {
+        window.location.href = mailtoHref;
+      } catch (_) {}
+    });
+  </script>
+</body>
+</html>
