@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Safety Officer 3D: Hazard Runner | AXSAN SYSTEMS CORPORATION</title>
+  <meta name="description" content="Política de Privacidad oficial de Safety Officer 3D: Hazard Runner desarrollada por AXSAN SYSTEMS CORPORATION. Cumplimiento Google Play Store, AdMob, Firebase y Google Play Billing." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #09090b;
+      --muted: #52525b;
+      --accent: #dc2626;
+      --accent-soft: #fef2f2;
+      --border: #e4e4e7;
+      --emerald: #047857;
+      --emerald-soft: #ecfdf5;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, #09090b 0%, #18181b 65%, #450a0a 100%);
+      color: #ffffff;
+      padding: 36px 20px 32px;
+      border-bottom: 4px solid var(--accent);
+    }
+    .wrap {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .lang-switch {
+      display: inline-flex;
+      gap: 6px;
+    }
+    .lang-btn {
+      background: rgba(255,255,255,0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 1.2;
+      font-weight: 900;
+    }
+    .subtitle {
+      margin: 0;
+      color: #d4d4d8;
+      font-size: 15px;
+      max-width: 720px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .meta-item {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 12.5px;
+    }
+    .meta-item strong {
+      display: block;
+      color: #fca5a5;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .meta-item a { color: #ffffff; }
+    main {
+      padding: 28px 16px 56px;
+    }
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(9,9,11,0.04);
+    }
+    .toc h2 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--accent);
+    }
+    .toc-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 6px 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13.5px;
+    }
+    .toc-list a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .toc-list a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 14px rgba(9,9,11,0.03);
+    }
+    section h2 {
+      margin: 0 0 12px;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--ink);
+      border-bottom: 2px solid var(--accent-soft);
+      padding-bottom: 8px;
+    }
+    section h3 {
+      margin: 16px 0 6px;
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #18181b;
+    }
+    p { margin: 0 0 12px; font-size: 14.5px; color: #27272a; }
+    ul, ol { margin: 0 0 12px; padding-left: 20px; font-size: 14.5px; color: #27272a; }
+    li { margin-bottom: 6px; }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 12px 0 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      min-width: 620px;
+    }
+    th {
+      background: #09090b;
+      color: #ffffff;
+      text-align: left;
+      padding: 11px 12px;
+      font-weight: 700;
+    }
+    td {
+      padding: 10px 12px;
+      border-top: 1px solid var(--border);
+      vertical-align: top;
+      color: #27272a;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+    .callout {
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    .callout.red {
+      background: var(--accent-soft);
+      border: 1px solid #fecaca;
+      color: #7f1d1d;
+    }
+    .callout.green {
+      background: var(--emerald-soft);
+      border: 1px solid #a7f3d0;
+      color: #064e3b;
+    }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center;
+      padding: 24px 16px 36px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+    }
+    .hidden { display: none !important; }
+    @media (max-width: 600px) {
+      section { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand-pill">🛡️ AXSAN SYSTEMS CORPORATION · 2026</div>
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" id="btn-es" class="lang-btn active" onclick="setLang('es')">Español</button>
+          <button type="button" id="btn-en" class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </div>
+      <h1 id="hdr-title">Política de Privacidad — Safety Officer 3D: Hazard Runner</h1>
+      <p id="hdr-sub" class="subtitle">
+        Transparencia total sobre la recopilación, uso, almacenamiento, protección y eliminación de datos personales y de dispositivo conforme a las políticas de Google Play Store, RGPD, CCPA y Ley N.° 29733.
+      </p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong id="m-dev-lbl">Desarrollador / Responsable</strong>
+          AXSAN SYSTEMS CORPORATION
+        </div>
+        <div class="meta-item">
+          <strong id="m-app-lbl">Aplicación Android</strong>
+          Safety Officer 3D: Hazard Runner<br /><small>ID: com.axsan.supervisorhseaxsan</small>
+        </div>
+        <div class="meta-item">
+          <strong id="m-mail-lbl">Correo de Privacidad</strong>
+          <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>
+        </div>
+        <div class="meta-item">
+          <strong id="m-web-lbl">Sitio Web Oficial</strong>
+          <a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- =================================================================== -->
+    <!-- VERSIÓN EN ESPAÑOL                                                  -->
+    <!-- =================================================================== -->
+    <div id="content-es">
+      <p style="font-size:13px; color:#52525b; margin-bottom:16px;">
+        <strong>Fecha de entrada en vigor y última actualización:</strong> 22 de noviembre de 2026.
+      </p>
+
+      <nav class="toc" aria-label="Índice de contenido">
+        <h2>Índice de Contenido</h2>
+        <ul class="toc-list">
+          <li><a href="#es-1">1. Identificación y Alcance</a></li>
+          <li><a href="#es-2">2. Datos que Recopilamos y Base Legal</a></li>
+          <li><a href="#es-3">3. Publicidad (Google AdMob y UMP)</a></li>
+          <li><a href="#es-4">4. Compras y Suscripciones (Google Play Billing)</a></li>
+          <li><a href="#es-5">5. Funciones en la Nube, Empresas y Multijugador</a></li>
+          <li><a href="#es-6">6. Permisos del Dispositivo y Datos Locales</a></li>
+          <li><a href="#es-7">7. Terceros Proveedores y Transferencias</a></li>
+          <li><a href="#es-8">8. Seguridad y Conservación de Datos</a></li>
+          <li><a href="#es-9">9. Eliminación de Cuenta y Derechos del Usuario</a></li>
+          <li><a href="#es-10">10. Privacidad de Menores de Edad</a></li>
+          <li><a href="#es-11">11. Cambios y Contacto Directo</a></li>
+        </ul>
+      </nav>
+
+      <section id="es-1">
+        <h2>1. Identificación del Responsable y Alcance</h2>
+        <p>
+          La presente Política de Privacidad regula el tratamiento de la información de los usuarios que descargan, instalan o utilizan la aplicación móvil <strong>Safety Officer 3D: Hazard Runner</strong> (identificador de paquete Android: <code>com.axsan.supervisorhseaxsan</code>), desarrollada y operada por <strong>AXSAN SYSTEMS CORPORATION</strong>, con domicilio digital oficial en <a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a> y correo de contacto <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>.
+        </p>
+        <p>
+          Al crear una cuenta, iniciar sesión o utilizar la aplicación en su versión gratuita con anuncios o mediante suscripción, usted acepta las prácticas descritas en este documento. Si no está de acuerdo con alguna disposición, debe abstenerse de utilizar la aplicación y puede solicitar la eliminación de sus datos en cualquier momento.
+        </p>
+      </section>
+
+      <section id="es-2">
+        <h2>2. Datos que Recopilamos, Finalidad y Base Legal</h2>
+        <p>
+          Solo recopilamos los datos estrictamente necesarios para operar el juego 3D, autenticar su perfil, sincronizar rankings, habilitar salas multijugador, mostrar publicidad compatible con su consentimiento y validar compras o suscripciones de Google Play.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Categoría de Datos</th>
+                <th>Datos Específicos</th>
+                <th>Finalidad del Tratamiento</th>
+                <th>¿Se comparte con terceros?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Información Personal y Cuenta</strong></td>
+                <td>Nombre visible o alias, dirección de correo electrónico, identificador único de Firebase (UID), proveedor de acceso (<code>password</code> o <code>google.com</code>) y URL pública de foto de perfil (si accede con Google).</td>
+                <td>Autenticación segura, recuperación de contraseña, personalización de perfil y sincronización de progreso entre dispositivos.</td>
+                <td>Procesado por <strong>Google Firebase Authentication</strong>. Su correo electrónico <strong>nunca</strong> se muestra públicamente en rankings ni salas.</td>
+              </tr>
+              <tr>
+                <td><strong>Actividad de Juego y Progreso</strong></td>
+                <td>Puntaje de Gestión SST, nivel alcanzado (1 al 5), experiencia (XP), rachas preventivas diarias, medallas, empresa/área vinculada (opcional) y puntajes en salas multijugador.</td>
+                <td>Mostrar su posición en el Ranking Mundial, ranking corporativo por empresa/área, salas multijugador (2–4 jugadores) y generar diplomas PDF locales.</td>
+                <td>Solo su nombre visible, puntaje, nivel, empresa/área y racha son visibles en tableros para usuarios autenticados.</td>
+              </tr>
+              <tr>
+                <td><strong>Identificadores de Dispositivo y Publicidad</strong></td>
+                <td>ID de publicidad de Android (AAID), dirección IP aproximada, eventos de impresión/clic de anuncios y estado de consentimiento de privacidad (UMP).</td>
+                <td>Entrega de anuncios Recompensados e Intersticiales (en la versión gratuita), prevención de fraude y medición publicitaria conforme a su consentimiento.</td>
+                <td>Sí, con <strong>Google AdMob</strong> y su red de mediación/socios certificados bajo las políticas de Google.</td>
+              </tr>
+              <tr>
+                <td><strong>Historial de Compras y Suscripciones</strong></td>
+                <td>Identificador de producto/suscripción (SKU), token de transacción de Google Play y estado de vigencia (<code>adFreeSubActive</code>, personajes VIP desbloqueados).</td>
+                <td>Activar el pase Sin Anuncios (Mensual o Anual), verificar la prueba gratuita de 7 días y restaurar compras en otros dispositivos.</td>
+                <td>Procesado directamente por <strong>Google Play Billing</strong>. AXSAN SYSTEMS CORPORATION nunca recibe datos de tarjetas o cuentas bancarias.</td>
+              </tr>
+              <tr>
+                <td><strong>Analítica y Diagnóstico de App</strong></td>
+                <td>Eventos de uso (inicio de sesión, partidas completadas, interacciones en tienda), modelo del dispositivo, versión de Android e idioma seleccionado (ES/EN).</td>
+                <td>Mejorar el rendimiento WebGL 3D, detectar errores técnicos y optimizar la experiencia educativa SSOMA.</td>
+                <td>Procesado por <strong>Google Firebase Analytics</strong>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout green">
+          <strong>Compromiso de No Venta de Datos:</strong> AXSAN SYSTEMS CORPORATION <strong>no vende, alquila ni comercializa</strong> sus datos personales a corredores de datos ni a terceros con fines ajenos al funcionamiento de la aplicación.
+        </div>
+      </section>
+
+      <section id="es-3">
+        <h2>3. Publicidad en la Versión Gratuita (Google AdMob y Google UMP)</h2>
+        <p>
+          La versión gratuita de <strong>Safety Officer 3D: Hazard Runner</strong> utiliza el SDK oficial de <strong>Google Mobile Ads (AdMob)</strong> para mostrar dos formatos de anuncios:
+        </p>
+        <ul>
+          <li><strong>Anuncios Recompensados (voluntarios):</strong> el usuario elige ver un video completo para recibir un beneficio dentro del juego (por ejemplo, aplicar Primeros Auxilios para revivir una vez por partida u obtener presupuesto virtual en la Tienda SSOMA).</li>
+          <li><strong>Anuncios Intersticiales (en transiciones):</strong> mostrados de forma espaciada al finalizar sesiones y regresar al menú principal, nunca durante una partida activa ni si el usuario cuenta con una suscripción Sin Anuncios vigente.</li>
+        </ul>
+        <p>
+          Integramos la plataforma oficial <strong>Google User Messaging Platform (UMP)</strong> para solicitar y respetar el consentimiento de privacidad en el Espacio Económico Europeo (EEE), Reino Unido y jurisdicciones aplicables antes de cargar anuncios personalizados. Usted puede restablecer o limitar su ID de publicidad en todo momento desde <em>Ajustes de Android → Google → Anuncios</em>.
+        </p>
+      </section>
+
+      <section id="es-4">
+        <h2>4. Compras Dentro de la App y Suscripciones (Google Play Billing)</h2>
+        <p>
+          La aplicación ofrece de forma opcional suscripciones recurrentes (Plan Mensual y Plan Anual para eliminar los anuncios intersticiales y habilitar beneficios VIP, con opción de prueba gratuita de 7 días para nuevos suscriptores elegibles según las reglas de Google Play) y futuros artículos digitales dentro de la Tienda SSOMA.
+        </p>
+        <ul>
+          <li>Todos los cobros, renovaciones automáticas, pruebas gratuitas, impuestos locales y reembolsos son administrados íntegramente por <strong>Google Play Store</strong>.</li>
+          <li>AXSAN SYSTEMS CORPORATION no accede ni almacena números de tarjeta, códigos CVV ni credenciales bancarias.</li>
+          <li>El usuario puede cancelar o gestionar su suscripción en cualquier momento desde la aplicación (<em>Menú → Suscripción → Gestionar en Google Play</em>) o directamente en la app de Google Play Store.</li>
+        </ul>
+      </section>
+
+      <section id="es-5">
+        <h2>5. Funciones Corporativas, Multijugador y Diplomas PDF</h2>
+        <ul>
+          <li><strong>Separación estricta de datos privados (PII):</strong> en Cloud Firestore, su correo electrónico y preferencias privadas se almacenan exclusivamente en <code>users_private/{uid}</code>, accesible únicamente por el propio usuario autenticado mediante reglas de seguridad estrictas (<code>firestore.rules</code>).</li>
+          <li><strong>Empresas, Áreas y Grupos:</strong> si usted decide crear o unirse a una empresa, área operativa o grupo de amigos, su nombre visible y puntaje acumulado en el juego serán visibles para los integrantes de dicha organización o grupo.</li>
+          <li><strong>Salas Multijugador en Tiempo Real:</strong> las partidas de 2 a 4 jugadores sincronizan temporalmente el apodo, estado de preparación y puntaje en vivo dentro de la sala mientras dura la competencia.</li>
+          <li><strong>Diplomas PDF Locales:</strong> los certificados generados al superar los niveles de Sabiduría SSOMA se construyen íntegramente de forma local en su dispositivo sin enviarse a servidores externos.</li>
+        </ul>
+      </section>
+
+      <section id="es-6">
+        <h2>6. Permisos del Dispositivo y Almacenamiento Local</h2>
+        <p>Nuestra aplicación solicita únicamente los permisos mínimos indispensables:</p>
+        <ul>
+          <li><code>android.permission.INTERNET</code>: requerido para autenticación Firebase, rankings, multijugador, verificación de compras en Google Play y carga de anuncios.</li>
+          <li><code>android.permission.VIBRATE</code>: utilizado exclusivamente para retroalimentación háptica táctil durante los mini-juegos y alertas preventivas.</li>
+        </ul>
+        <p>
+          No solicitamos permisos de cámara, micrófono, ubicación GPS precisa, contactos, llamadas ni acceso al almacenamiento externo de otros archivos personales. Guardamos preferencias locales (idioma, volumen de música, estado en caché de suscripción y saldo virtual) mediante <code>localStorage</code> y <code>SharedPreferences</code> en el espacio privado de la app.
+        </p>
+      </section>
+
+      <section id="es-7">
+        <h2>7. Proveedores de Servicios Externos y Transferencias Internacionales</h2>
+        <p>
+          Para brindar infraestructura confiable en la nube, nuestra aplicación se apoya en los siguientes proveedores de tecnología, cuyas políticas de privacidad complementan este documento:
+        </p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google y Google Play Services</a></li>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacidad y Seguridad en Google Firebase (Auth, Firestore, Analytics)</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Políticas y Uso de Datos en Google AdMob</a></li>
+          <li><a href="https://pixabay.com/service/privacy/" target="_blank" rel="noopener">Atribución de música libre de regalías (Pixabay Content License)</a> — pistas incluidas localmente dentro de la app sin rastreo de audio externo.</li>
+        </ul>
+        <p>
+          Estos proveedores pueden procesar datos en servidores ubicados fuera de su país de residencia (por ejemplo, en Estados Unidos o la Unión Europea) aplicando cláusulas contractuales estándar y estándares de cifrado internacionales.
+        </p>
+      </section>
+
+      <section id="es-8">
+        <h2>8. Seguridad, Cifrado y Tiempo de Conservación</h2>
+        <ul>
+          <li><strong>Cifrado en tránsito:</strong> toda comunicación entre la aplicación, Firebase, Google Play Billing y AdMob se realiza exclusivamente mediante conexiones cifradas <strong>HTTPS / TLS</strong>.</li>
+          <li><strong>Control de acceso:</strong> la autenticación con Google emplea Android Credential Manager y tokens OAuth 2.0 validados por Firebase Auth, mientras que la base de datos aplica validación granular de esquemas y propiedad por <code>request.auth.uid</code>.</li>
+          <li><strong>Conservación:</strong> conservamos los datos de su cuenta mientras mantenga su perfil activo. Si solicita la eliminación de su cuenta o permanece inactivo de forma prolongada según políticas operativas, sus datos personales se eliminan o anonimizan de forma irreversible.</li>
+        </ul>
+      </section>
+
+      <section id="es-9">
+        <h2>9. Eliminación de Cuenta y Derechos del Usuario (Data Deletion)</h2>
+        <div class="callout red">
+          <strong>Cómo solicitar la eliminación definitiva de su cuenta y datos:</strong><br />
+          Puede solicitar la eliminación total de su cuenta de usuario y todos los datos personales asociados (perfil en Firebase Auth, documento en <code>users_private</code>, posición en rankings y membresías) enviando un correo electrónico a <a href="mailto:gerencia@axsancorp.com?subject=Eliminacion%20de%20Cuenta%20-%20Safety%20Officer%203D">gerencia@axsancorp.com</a> desde la dirección vinculada a su cuenta con el asunto <strong>"Eliminación de Cuenta - Safety Officer 3D"</strong>. Procesaremos y confirmaremos su solicitud en un plazo máximo de <strong>15 días hábiles</strong> (con purga completa en sistemas en un máximo de 30 días).
+        </div>
+        <p>
+          Conforme al Reglamento General de Protección de Datos (RGPD), la Ley de Privacidad del Consumidor de California (CCPA/CPRA) y la Ley N.° 29733 de Protección de Datos Personales (Perú), usted tiene derecho a:
+        </p>
+        <ul>
+          <li><strong>Acceso e Información:</strong> conocer qué datos personales conservamos sobre usted.</li>
+          <li><strong>Rectificación:</strong> actualizar su nombre visible directamente dentro de la app (barra lateral → editar nombre) o mediante soporte.</li>
+          <li><strong>Supresión / Cancelación:</strong> solicitar el borrado definitivo de su cuenta y registros asociados.</li>
+          <li><strong>Oposición y Limitación:</strong> retirar su consentimiento para anuncios personalizados o desvincularse de empresas/grupos dentro de la aplicación.</li>
+        </ul>
+      </section>
+
+      <section id="es-10">
+        <h2>10. Privacidad de Menores de Edad</h2>
+        <p>
+          <strong>Safety Officer 3D: Hazard Runner</strong> es una herramienta de sensibilización y entrenamiento gamificado en Seguridad, Salud Ocupacional y Medio Ambiente (SSOMA / SST) dirigida a trabajadores, supervisores, ingenieros y estudiantes técnicos o universitarios mayores de edad. La aplicación <strong>no está dirigida a niños menores de 13 años</strong> (ni menores de 16 años donde la legislación local lo establezca) y no recopilamos deliberadamente información personal de menores. Si usted es padre, madre o tutor y detecta que un menor ha creado una cuenta, contáctenos a <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a> para eliminar dicha cuenta de inmediato.
+        </p>
+      </section>
+
+      <section id="es-11">
+        <h2>11. Actualizaciones de esta Política y Contacto</h2>
+        <p>
+          <strong>AXSAN SYSTEMS CORPORATION</strong> podrá actualizar esta Política de Privacidad para reflejar mejoras técnicas, nuevas funcionalidades (como nuevos especialistas 3D o actualizaciones normativas) o cambios legales. La fecha vigente siempre aparecerá publicada en la parte superior de esta página.
+        </p>
+        <p>
+          Para consultas legales, solicitudes de privacidad, soporte corporativo o eliminación de datos, contáctenos a través de:
+        </p>
+        <ul>
+          <li><strong>Empresa desarrolladora:</strong> AXSAN SYSTEMS CORPORATION</li>
+          <li><strong>Correo electrónico oficial:</strong> <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a></li>
+          <li><strong>Sitio web principal:</strong> <a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- ENGLISH VERSION                                                     -->
+    <!-- =================================================================== -->
+    <div id="content-en" class="hidden">
+      <p style="font-size:13px; color:#52525b; margin-bottom:16px;">
+        <strong>Effective Date & Last Updated:</strong> November 22, 2026.
+      </p>
+
+      <nav class="toc" aria-label="Table of Contents">
+        <h2>Table of Contents</h2>
+        <ul class="toc-list">
+          <li><a href="#en-1">1. Data Controller & Scope</a></li>
+          <li><a href="#en-2">2. Data We Collect & Legal Basis</a></li>
+          <li><a href="#en-3">3. Advertising (Google AdMob & UMP)</a></li>
+          <li><a href="#en-4">4. In-App Purchases & Subscriptions</a></li>
+          <li><a href="#en-5">5. Cloud Features, Companies & Multiplayer</a></li>
+          <li><a href="#en-6">6. Device Permissions & Local Storage</a></li>
+          <li><a href="#en-7">7. Third-Party Services & Transfers</a></li>
+          <li><a href="#en-8">8. Security & Data Retention</a></li>
+          <li><a href="#en-9">9. Account Deletion & User Rights</a></li>
+          <li><a href="#en-10">10. Children's Privacy</a></li>
+          <li><a href="#en-11">11. Changes & Contact Information</a></li>
+        </ul>
+      </nav>
+
+      <section id="en-1">
+        <h2>1. Data Controller & Scope</h2>
+        <p>
+          This Privacy Policy describes how <strong>AXSAN SYSTEMS CORPORATION</strong> (<a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a>, contact email: <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>) collects, uses, stores, and protects user data in connection with the Android mobile application <strong>Safety Officer 3D: Hazard Runner</strong> (package ID: <code>com.axsan.supervisorhseaxsan</code>).
+        </p>
+        <p>
+          By creating an account, signing in, or using the free ad-supported version or optional subscription plans of the app, you agree to the practices described in this policy.
+        </p>
+      </section>
+
+      <section id="en-2">
+        <h2>2. Data We Collect, Purpose & Legal Basis</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Specific Data</th>
+                <th>Purpose</th>
+                <th>Shared with Third Parties?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Account & Profile Info</strong></td>
+                <td>Display name / call sign, email address, Firebase UID, auth provider (<code>password</code> or <code>google.com</code>), and optional Google profile photo URL.</td>
+                <td>User authentication, password reset, profile customization, and cross-device synchronization.</td>
+                <td>Processed by <strong>Google Firebase Authentication</strong>. Your email address is <strong>never</strong> publicly displayed in rankings or multiplayer rooms.</td>
+              </tr>
+              <tr>
+                <td><strong>Gameplay & Progress Data</strong></td>
+                <td>HSE score, highest level (1–5), XP, daily safety streaks, medals, optional company/area membership, and live multiplayer match scores.</td>
+                <td>Global, company, and group leaderboards, 2–4 player multiplayer sessions, and on-device PDF certificate generation.</td>
+                <td>Only your display name, score, level, company/area name, and streak are visible on authenticated leaderboards.</td>
+              </tr>
+              <tr>
+                <td><strong>Device & Advertising IDs</strong></td>
+                <td>Android Advertising ID (AAID), approximate IP address, ad impressions/interactions, and UMP consent status.</td>
+                <td>Serving Rewarded and Interstitial ads in the free tier, fraud prevention, and consent-compliant ad measurement.</td>
+                <td>Yes, shared with <strong>Google AdMob</strong> and certified ad partners according to your consent choices.</td>
+              </tr>
+              <tr>
+                <td><strong>Purchases & Subscriptions</strong></td>
+                <td>Product/subscription SKU, Google Play purchase token, and active entitlement flags (<code>adFreeSubActive</code>, unlocked VIP characters).</td>
+                <td>Activating the Monthly/Annual Ad-Free pass (including 7-day free trial) and restoring purchases across devices.</td>
+                <td>Processed exclusively by <strong>Google Play Billing</strong>. We never receive or store credit card or bank information.</td>
+              </tr>
+              <tr>
+                <td><strong>Analytics & Diagnostics</strong></td>
+                <td>App usage events, app version, Android OS version, device model, and selected language (ES/EN).</td>
+                <td>Ensuring 3D WebGL stability, troubleshooting crashes, and improving safety training features.</td>
+                <td>Processed by <strong>Google Firebase Analytics</strong>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout green">
+          <strong>No Sale of Personal Data:</strong> AXSAN SYSTEMS CORPORATION <strong>does not sell or rent</strong> your personal data to data brokers or third parties.
+        </div>
+      </section>
+
+      <section id="en-3">
+        <h2>3. Advertising in the Free Version (Google AdMob & Google UMP)</h2>
+        <p>
+          The free version of <strong>Safety Officer 3D: Hazard Runner</strong> integrates the official <strong>Google Mobile Ads (AdMob)</strong> SDK for Rewarded Ads (opt-in video ads to revive once per run or claim bonus virtual budget) and Interstitial Ads (shown sparingly between natural menu transitions, never interrupting active gameplay and disabled automatically for active Ad-Free subscribers).
+        </p>
+        <p>
+          We use <strong>Google User Messaging Platform (UMP)</strong> to collect and respect regional privacy consent (EEA, UK, and applicable jurisdictions). You can reset or opt out of personalized ads at any time via <em>Android Settings → Google → Ads</em>.
+        </p>
+      </section>
+
+      <section id="en-4">
+        <h2>4. In-App Purchases & Subscriptions (Google Play Billing)</h2>
+        <p>
+          Optional Monthly and Annual Ad-Free subscriptions (with a 7-day free trial for eligible new subscribers) and future VIP store characters are processed securely through <strong>Google Play Billing</strong>. Subscriptions automatically renew unless canceled in Google Play before the end of the trial or billing period.
+        </p>
+      </section>
+
+      <section id="en-5">
+        <h2>5. Cloud Features, Companies & Multiplayer</h2>
+        <p>
+          Private account fields (including your email) are strictly isolated inside Cloud Firestore under <code>users_private/{uid}</code> with owner-only security rules. If you join a company, area, friend group, or 2–4 player multiplayer room, your display name and gameplay score are visible to members of that group or match. PDF certificates are generated locally on your device.
+        </p>
+      </section>
+
+      <section id="en-6">
+        <h2>6. Device Permissions & Local Storage</h2>
+        <ul>
+          <li><code>INTERNET</code>: required for Firebase Auth, Firestore rankings/multiplayer, Google Play Billing verification, and AdMob ads.</li>
+          <li><code>VIBRATE</code>: used solely for optional haptic feedback during gameplay.</li>
+        </ul>
+        <p>
+          We do not request camera, microphone, precise GPS location, contacts, or SMS permissions. Preferences (audio volume, language, local progress) are stored locally via <code>localStorage</code> and <code>SharedPreferences</code>.
+        </p>
+      </section>
+
+      <section id="en-7">
+        <h2>7. Third-Party Services & International Transfers</h2>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy & Google Play Services</a></li>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob Data Disclosure</a></li>
+        </ul>
+      </section>
+
+      <section id="en-8">
+        <h2>8. Security & Data Retention</h2>
+        <p>
+          All network communication uses <strong>HTTPS / TLS encryption</strong>. Account data is retained while your account remains active and purged or anonymized upon a verified deletion request.
+        </p>
+      </section>
+
+      <section id="en-9">
+        <h2>9. Account Deletion & User Rights</h2>
+        <div class="callout red">
+          <strong>Request Account & Data Deletion:</strong><br />
+          To permanently delete your account and all associated personal data (Firebase Auth account, <code>users_private</code> profile, leaderboard entries, and memberships), email <a href="mailto:gerencia@axsancorp.com?subject=Account%20Deletion%20-%20Safety%20Officer%203D">gerencia@axsancorp.com</a> from your registered email address with the subject <strong>"Account Deletion - Safety Officer 3D"</strong>. We process requests within <strong>15 business days</strong> (full purge within 30 days).
+        </div>
+        <p>
+          Under GDPR, CCPA/CPRA, and Peruvian Law No. 29733, you have the right to access, rectify, delete, or restrict the processing of your personal data.
+        </p>
+      </section>
+
+      <section id="en-10">
+        <h2>10. Children's Privacy</h2>
+        <p>
+          <strong>Safety Officer 3D: Hazard Runner</strong> is an occupational safety & health training game intended for adult workers, supervisors, engineers, and technical/university students. It is <strong>not directed to children under 13</strong> (or 16 where applicable). If a minor's data was inadvertently submitted, contact <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a> for immediate removal.
+        </p>
+      </section>
+
+      <section id="en-11">
+        <h2>11. Updates & Contact Information</h2>
+        <ul>
+          <li><strong>Developer:</strong> AXSAN SYSTEMS CORPORATION</li>
+          <li><strong>Privacy & Support Email:</strong> <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a></li>
+          <li><strong>Official Website:</strong> <a href="https://axsancorp.com" target="_blank" rel="noopener">https://axsancorp.com</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 <strong>AXSAN SYSTEMS CORPORATION</strong> · Safety Officer 3D: Hazard Runner ·
+    <a href="https://axsancorp.com" target="_blank" rel="noopener">axsancorp.com</a> ·
+    <a href="mailto:gerencia@axsancorp.com">gerencia@axsancorp.com</a>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      const isEn = lang === "en";
+      document.documentElement.lang = isEn ? "en" : "es";
+      document.getElementById("content-es").classList.toggle("hidden", isEn);
+      document.getElementById("content-en").classList.toggle("hidden", !isEn);
+      document.getElementById("btn-es").classList.toggle("active", !isEn);
+      document.getElementById("btn-en").classList.toggle("active", isEn);
+      document.getElementById("hdr-title").textContent = isEn
+        ? "Privacy Policy — Safety Officer 3D: Hazard Runner"
+        : "Política de Privacidad — Safety Officer 3D: Hazard Runner";
+      document.getElementById("hdr-sub").textContent = isEn
+        ? "Full transparency on how personal and device data are collected, used, protected, and deleted in compliance with Google Play Store, GDPR, CCPA, and Law No. 29733."
+        : "Transparencia total sobre la recopilación, uso, almacenamiento, protección y eliminación de datos personales y de dispositivo conforme a las políticas de Google Play Store, RGPD, CCPA y Ley N.° 29733.";
+      document.getElementById("m-dev-lbl").textContent = isEn ? "Developer / Controller" : "Desarrollador / Responsable";
+      document.getElementById("m-app-lbl").textContent = isEn ? "Android Application" : "Aplicación Android";
+      document.getElementById("m-mail-lbl").textContent = isEn ? "Privacy Email" : "Correo de Privacidad";
+      document.getElementById("m-web-lbl").textContent = isEn ? "Official Website" : "Sitio Web Oficial";
+    }
+  </script>
+</body>
+</html>
